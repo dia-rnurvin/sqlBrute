@@ -660,10 +660,10 @@ def generate_html_report(results, report_name):
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fuzzing Results</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="assets/bootstrap.min.css" rel="stylesheet">
+        <script src="assets/jquery-3.5.1.slim.min.js"></script>
+        <script src="assets/popper.min.js"></script>
+        <script src="assets/bootstrap.min.js"></script>
         <style>
             .table th, .table td {
                 text-align: center;
@@ -713,7 +713,7 @@ def generate_html_report(results, report_name):
             }
             body::before {
                 content: "";
-                background-image: url('https://dia.edu.az/wp-content/uploads/2021/03/cropped-DIA-gerb-fon-png.png');
+                background-image: url('assets/logo.png');
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -999,4 +999,4 @@ def main():
 
 if __name__ == "__main__":
     requests.packages.urllib3.disable_warnings()
-    main() 
+    main()
